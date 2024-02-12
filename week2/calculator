@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main(){
+   float a,b;
+   int choice;
+   cout<<"Enter a : "<<endl;
+   cin>>a;
+   cout<<"Enter b : "<<endl;
+   cin>>b;
+   cout<<"1.Addition 2.Subtraction 3.Multiplication 4.Division"<<endl;
+   cout<<"Enter choice : "<<endl;
+   cin>>choice;
+   switch(choice)
+   {
+       case 1:cout<<"Addition of "<<a<<"and "<<b<<"is "<<(a+b)<<endl;
+              break;
+       case 2:cout<<"Subtraction of "<<a<<"and "<<b<<"is "<<(a-b)<<endl;
+              break;
+       case 3:cout<<"Multiplication of "<<a<<"and "<<b<<"is "<<(a*b)<<endl;
+              break;
+       case 4:cout<<"Division of "<<a<<"and "<<b<<"is "<<(a/b)<<endl;
+              break;
+       default : cout<<"Enter valid choice";
+      
+   }
+}
