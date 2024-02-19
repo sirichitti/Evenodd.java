@@ -1,0 +1,19 @@
+#include<iostream>
+#ifndef PI
+#define PI 3.14
+#endif
+#include"Areaofcircle.h"
+using namespace std;
+int main(){
+    float radius;
+    cout<<"Enter radius :"<<endl;
+    cin>>radius;
+    area(radius);
+
+}
+//areaofcircle.h
+#include<iostream>
+using namespace std;
+void area(float radius){
+    cout<<"Area of circle :"<<(PI*radius*radius)<<endl;
+}
