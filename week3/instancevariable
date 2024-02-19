@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+
+class Student{
+    private:
+        string fullName;
+        int rollnum;
+        double semPercentage; 
+        string collegeName;
+        int collegeCode;
+    public:
+        Student(){
+            cout<<"created"<<endl;
+        }
+        Student(string name,int num,double sem,string coll,int code) {
+
+            fullName = name;
+            rollnum = num;
+            semPercentage = sem;
+            collegeName= coll;
+            collegeCode = code;
+        }
+        friend void displayPrivate(Student);
+        
+   ~Student(){
+        cout<<"I'm dead"<<endl;
+    }
+};
+
+void displayPrivate(Student s){
+    cout<<”student name: "<<s.fullName<<endl;
+    cout<<"student roll no: "<<s.rollNum<<endl;
+    cout<<"student sem percentage: "<<s.semPercentage<<endl;
+    cout<<"college name: "<<s.collegeName<<endl;
+    cout<<"college code: "<<s.collegeCode<<endl;
+}
+
+int main() {
+    Student student("Padmapravalika ",538,9.29,"MAHARAJ VIJAYARAM COLLEGE OF ENGINEERING",33);
+    displayPrivate(student);
+}
