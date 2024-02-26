@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+
+class Student{
+   String collegeName,fullName;
+   int collegeCode;
+   double semPerentage;
+   
+   Student(String fullName,double semPerentage){
+       this.fullName = fullName;
+       this.semPerentage = semPerentage;
+       System.out.println("fullName : "+fullName);
+       System.out.println("semPerentage : "+semPerentage);
+   }
+   Student(){
+       this.collegeName = "MVGR";
+       this.collegeCode=33;
+       System.out.println(collegeName);
+       System.out.println(collegeCode);
+   }
+  
+}
+public class Main {
+  
+  public static void main(String[] args){
+   Scanner sc = new Scanner(System.in);
+   String fullName;
+   double semPerentage;
+   System.out.println("Enter student name : ");
+   fullName = sc.nextLine();
+   System.out.println("Enter Sempercentage : ");
+   semPerentage= sc.nextDouble();
+   Student bindhu = new Student(fullName,semPerentage);
+   Student siri = new Student();
+  }
+
+
+
+
+}
