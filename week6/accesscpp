@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+class accessmodifiersdemo{
+    private:
+      int privar;
+   protected:
+      int provar;
+   public:
+      int pubvar;
+   void setVar(int privatevar,int protectedvar,int publicvar){
+       privar=privatevar;
+       provar=protectedvar;
+       pubvar=publicvar;
+   }
+   void getVar()
+   {
+       cout<<"public variable : "<<pubvar<<endl;
+       cout<<"protected variable : "<<provar<<endl;
+       cout<<"private variable : "<<privar<<endl;
+   }
+};
+int main(){
+   accessmodifiersdemo obj;
+   int prival,proval,pubval;
+   cout<<"Enter prival : "<<endl;
+   cin>>prival;
+   cout<<"Enter proval : "<<endl;
+   cin>>proval;
+   cout<<"Enter pubval : "<<endl;
+   cin>>pubval;
+   obj.setVar(prival,proval,pubval);
+   cout<<"The variables are : "<<endl;
+   obj.getVar();
+}
