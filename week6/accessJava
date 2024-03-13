@@ -1,0 +1,91 @@
+import java.util.*;
+public class accessSpecifiersDemo{
+   public int pubvar;
+   protected int provar;
+       privar=priValue;
+
+       provar=proValue;
+
+   }
+
+   public void getVar(){
+
+       System.out.println("private value : "+privar);
+
+       System.out.println("protected value : "+provar);
+
+       System.out.println("public value : "+pubvar);
+
+   }
+       privar=priValue;
+
+       provar=proValue;
+
+   }
+
+   public void getVar(){
+
+       System.out.println("private value : "+privar);
+
+       System.out.println("protected value : "+provar);
+
+       System.out.println("public value : "+pubvar);
+
+   }
+       privar=priValue;
+
+       provar=proValue;
+
+   }
+
+   public void getVar(){
+
+       System.out.println("private value : "+privar);
+
+       System.out.println("protected value : "+provar);
+
+       System.out.println("public value : "+pubvar);
+
+   }
+       privar=priValue;
+
+       provar=proValue;
+
+   }
+
+   public void getVar(){
+
+       System.out.println("private value : "+privar);
+
+       System.out.println("protected value : "+provar);
+
+       System.out.println("public value : "+pubvar);
+
+   }
+   private int privar;
+
+   public void setVar(int priValue,int proValue, int pubValue){
+       pubvar=pubValue;
+       privar=priValue;
+       provar=proValue;
+   }
+   public void getVar(){
+       System.out.println("private value : "+privar);
+       System.out.println("protected value : "+provar);
+       System.out.println("public value : "+pubvar);
+   }
+}
+class Main{
+   public static void main(String[] args){
+       accessSpecifiersdemo obj = new accessSpecifiersDemo();
+       Scanner sc = new Scanner(System.in);
+       int priValue,proValue,pubValue;
+       System.out.println("Enter priValue,proValue,pubValue : ");
+       priValue=sc.nextInt();
+       proValue=sc.nextInt();
+       pubValue=sc.nextInt();
+       obj.setVar(priValue,proValue,pubValue);
+       System.out.println("The values are : ");
+       obj.getVar();
+   }
+}
